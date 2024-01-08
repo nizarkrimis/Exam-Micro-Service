@@ -31,6 +31,6 @@ public class StudentController {
     public ResponseEntity<List<Student>> findAllStudents(
             @PathVariable("cour-id") Integer schoolId
     ) {
-        return ResponseEntity.ok(service.findAllStudentsBySchool(schoolId));
+        return ResponseEntity.ok(service.findAllStudentsByCour(schoolId));
     }
 }
